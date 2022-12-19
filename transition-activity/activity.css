@@ -6,3 +6,30 @@ button {
 button:hover {
     color: #fff;
 }
+
+.caption {
+    position: relative;
+}
+
+.caption h1 {
+    text-align: left;
+}
+
+.caption div {
+    position: absolute;
+    width: 75%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    /* background-color: rgba(127, 255, 212, 0.8); */
+    transform: translateY(calc(100% - 4.5em));
+    transition: transform 2s;
+}
+
+.caption:hover div {
+    transform: translateY(0);
+}
